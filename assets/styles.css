@@ -14,10 +14,27 @@ a{ color: var(--primary); }
 .card{ border-radius:8px; box-shadow: 0 1px 6px rgba(16,24,40,0.06); padding: 1rem; }
 button{ background: var(--primary); color: white; border: none; padding: .5rem 1rem; border-radius: 6px; }
 
-.quarto-container {
-  max-width: 100%;
+/* Force wide layout */
+.page-columns .content {
+  max-width: 100% !important;
 }
-
-main {
-  max-width: 100%;
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container {
+  max-width: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+#quarto-content {
+  max-width: 100% !important;
+}
+#quarto-content > * {
+  max-width: 100% !important;
+}
+main.content {
+  max-width: 100% !important;
+}
+div.content {
+  max-width: 100% !important;
+}
+.body-content {
+  max-width: 100% !important;
 }

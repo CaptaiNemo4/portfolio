@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Chorobek Sheranov — Data Science Portfolio</title>
+<title>Portfolio Optimization – Chorobek Sheranov — Data Science Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +71,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="assets/styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../assets/styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Chorobek Sheranov — Data Science Portfolio</span>
     </a>
   </div>
@@ -93,19 +122,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/index.html"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/resume.html"> 
+    <a class="nav-link" href="../projects/resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -125,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Portfolio Optimization</h1>
 </div>
 
 
@@ -142,33 +171,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="projects" class="level1">
-<h1>Projects</h1>
-<p>A selection of data science projects showcasing statistical modeling, Bayesian inference, optimization, and interactive visualization.</p>
-<section id="bayesian-volatility-modeling-garch-vs-stochastic-volatility" class="level2">
-<h2 class="anchored" data-anchor-id="bayesian-volatility-modeling-garch-vs-stochastic-volatility">1. Bayesian Volatility Modeling: GARCH vs Stochastic Volatility</h2>
-<p>An interactive application comparing two Bayesian volatility models on S&amp;P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.</p>
-<p><strong>Highlights:</strong></p>
-<ul>
-<li>Bayesian parameter estimation using Markov Chain Monte Carlo (Stan)</li>
-<li>GARCH(1,1) vs Stochastic Volatility model comparison</li>
-<li>Out-of-sample prediction including the COVID-19 volatility spike</li>
-<li>Object-oriented Python design with abstract classes, inheritance, and polymorphism</li>
-</ul>
-<p><a href="project1.qmd">View Project Details →</a></p>
-<hr>
+<section id="portfolio-optimization-quantitative-approaches" class="level1">
+<h1>Portfolio Optimization: Quantitative Approaches</h1>
+<p>This project compares five portfolio optimization strategies on a diversified 16-asset portfolio spanning U.S. equities, international equities, real estate, commodities, and fixed income. Models were trained on 2014–2021 data and backtested on 2021–2024.</p>
+<section id="the-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="the-strategies">The Strategies</h2>
+<p><strong>Mean-Variance Optimization (Efficient Frontier)</strong> — Minimizes portfolio volatility for a given target return. Three points along the frontier were selected: conservative, moderate, and aggressive.</p>
+<p><span class="math display">\[\min_{\mathbf{w}} \left(\mathbf{w}^T \Sigma \mathbf{w}\right) \quad \text{s.t.} \quad \mathbf{w}^T \mu = \mu_p\]</span></p>
+<p><strong>Maximum Sharpe Ratio</strong> — Maximizes risk-adjusted return by optimizing the ratio of excess return to volatility.</p>
+<p><span class="math display">\[\max_{\mathbf{w}} \left(\frac{\mathbf{w}^T \mu - R_f}{\sqrt{\mathbf{w}^T \Sigma \mathbf{w}}}\right)\]</span></p>
+<p><strong>Global Minimum Variance</strong> — Minimizes total portfolio risk without requiring expected return estimates.</p>
+<p><strong>Risk Parity</strong> — Equalizes the risk contribution of each asset to the overall portfolio.</p>
+<p><strong>Equal Weights (Benchmark)</strong> — Naive 1/N allocation across all assets.</p>
 </section>
-<section id="portfolio-optimization-quantitative-approaches" class="level2">
-<h2 class="anchored" data-anchor-id="portfolio-optimization-quantitative-approaches">2. Portfolio Optimization: Quantitative Approaches</h2>
-<p>Comparing five portfolio optimization strategies — Efficient Frontier, Max Sharpe, Global Minimum Variance, Risk Parity, and Equal Weights — on a diversified 16-asset portfolio backtested over 2021–2024.</p>
-<p><strong>Highlights:</strong></p>
+<section id="portfolio-assets" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-assets">Portfolio Assets</h2>
+<p>16 assets across 5 classes: U.S. Equities (SPY, AAPL, MSFT, JNJ, JPM, BA, NKE, AMZN), Non-U.S. Equities (IEMG, ILF, DB1.DE), Real Estate (IYR, REM), Commodities (GLD, CL=F), and Fixed Income (ISTB).</p>
+</section>
+<section id="interactive-demo" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-demo">Interactive Demo</h2>
+<p>Explore the backtest results below — toggle strategies, compare cumulative returns, Sharpe ratios, and asset allocations.</p>
+<iframe src="https://connect.posit.cloud/captainemo4/content/019d849e-bffa-263e-d186-9b2cac9a2100" width="100%" height="800" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
 <ul>
-<li>Mean-Variance Optimization with efficient frontier construction</li>
-<li>Maximum Sharpe Ratio, GMV, and Risk Parity strategies</li>
-<li>Backtesting against S&amp;P 500 and equal-weight benchmarks</li>
-<li>Interactive strategy comparison with Sharpe ratios and asset allocation views</li>
+<li>The <strong>aggressive efficient frontier point (EF_3) achieved the highest total return</strong> at 38.0%, beating the S&amp;P 500 benchmark (32.9%)</li>
+<li><strong>Max Sharpe and EF_2 performed comparably</strong> to SPY with Sharpe ratios of 0.36 and 0.35</li>
+<li><strong>GMV underperformed significantly</strong> (-1.1% total return) — minimizing risk alone was insufficient during a rising market</li>
+<li><strong>Risk Parity delivered modest returns</strong> (9.1%) with low volatility, suitable for conservative investors</li>
+<li>The <strong>Equal Weights benchmark outperformed</strong> most optimization strategies, highlighting the challenge of beating simple approaches</li>
 </ul>
-<p><a href="project2.qmd">View Project Details →</a></p>
+</section>
+<section id="technology-stack" class="level2">
+<h2 class="anchored" data-anchor-id="technology-stack">Technology Stack</h2>
+<ul>
+<li><strong>Python 3.9+</strong>, SciPy (Sequential Quadratic Programming), pandas, NumPy, Plotly</li>
+<li><strong>Optimization:</strong> scipy.optimize.minimize with SLSQP method</li>
+<li><strong>Data:</strong> Yahoo Finance (yfinance), U.S. Treasury rates (FRED)</li>
+</ul>
 
 
 </section>

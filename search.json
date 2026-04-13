@@ -63,76 +63,6 @@
     "text": "Feel free to reach out via email or connect on LinkedIn."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "A selection of data science projects showcasing statistical modeling, Bayesian inference, and interactive visualization.\n\n\nAn interactive application comparing two Bayesian volatility models on S&P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.\nHighlights:\n\nBayesian parameter estimation using Markov Chain Monte Carlo (Stan)\nGARCH(1,1) vs Stochastic Volatility model comparison\nOut-of-sample prediction including the COVID-19 volatility spike\nObject-oriented Python design with abstract classes, inheritance, and polymorphism\n\nView Project Details →"
-  },
-  {
-    "objectID": "projects/index.html#bayesian-volatility-modeling-garch-vs-stochastic-volatility",
-    "href": "projects/index.html#bayesian-volatility-modeling-garch-vs-stochastic-volatility",
-    "title": "Projects",
-    "section": "",
-    "text": "An interactive application comparing two Bayesian volatility models on S&P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.\nHighlights:\n\nBayesian parameter estimation using Markov Chain Monte Carlo (Stan)\nGARCH(1,1) vs Stochastic Volatility model comparison\nOut-of-sample prediction including the COVID-19 volatility spike\nObject-oriented Python design with abstract classes, inheritance, and polymorphism\n\nView Project Details →"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I’m a Data Science and Economics student at Central European University, graduating in June 2026. I spent my third year at the London School of Economics studying Stochastic and Actuarial Methods in Finance, Macroeconomics, and Valuation & Hedging — earning a Distinction.\nMy interests sit at the intersection of quantitative finance, macroeconomics, and data science. I’ve worked at Goldman Sachs (Equities Market Risk) and Raiffeisen Bank International, and I’m joining a macro-focused hedge fund in Abu Dhabi as an Investment Associate after graduation.\n\n\n\nProgramming: Python, SQL, Stata\nStatistics & ML: Bayesian inference, time series analysis, volatility modeling, econometrics, machine learning\nTools: Bloomberg, Refinitiv, Excel, PowerBI, Git, Databricks, Google Analytics\nFrameworks: Shiny, Quarto, Jupyter, Stan\n\n\n\n\nBSc Data Science and Economics (Distinction) Central European University, Vienna — September 2022 – June 2026\n\nAwards: CEU Tuition Awards (merit-based), CEU Alumni Scholarship (one of two bachelor’s recipients)\nThesis: Analyzing Duration and Convexity of EM vs G10 Bonds under Stress\n\nStudy Abroad — Department of Mathematics (Distinction) London School of Economics and Political Science — September 2024 – June 2025\n\n\n\nEnglish (full professional proficiency), Kyrgyz (native), Russian (bilingual)\n\n\n\n\nEmail: chorobek2004@gmail.com\nGitHub: github.com/CaptaiNemo4\nLinkedIn: linkedin.com/in/chorobeksheranov"
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About",
-    "section": "",
-    "text": "Programming: Python, SQL, Stata\nStatistics & ML: Bayesian inference, time series analysis, volatility modeling, econometrics, machine learning\nTools: Bloomberg, Refinitiv, Excel, PowerBI, Git, Databricks, Google Analytics\nFrameworks: Shiny, Quarto, Jupyter, Stan"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "",
-    "text": "BSc Data Science and Economics (Distinction) Central European University, Vienna — September 2022 – June 2026\n\nAwards: CEU Tuition Awards (merit-based), CEU Alumni Scholarship (one of two bachelor’s recipients)\nThesis: Analyzing Duration and Convexity of EM vs G10 Bonds under Stress\n\nStudy Abroad — Department of Mathematics (Distinction) London School of Economics and Political Science — September 2024 – June 2025"
-  },
-  {
-    "objectID": "about.html#languages",
-    "href": "about.html#languages",
-    "title": "About",
-    "section": "",
-    "text": "English (full professional proficiency), Kyrgyz (native), Russian (bilingual)"
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "",
-    "text": "Email: chorobek2004@gmail.com\nGitHub: github.com/CaptaiNemo4\nLinkedIn: linkedin.com/in/chorobeksheranov"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Welcome to my Data Science portfolio. I’m a final-year BSc Data Science and Economics student at Central European University, with a study abroad year at the London School of Economics within the Department of Mathematics. My interests lie in macro investing, emerging markets and financial mathematics.\nPreviously, Summer Analyst at Goldman Sachs (London) and Working Student at Raiffeisen Bank International (Vienna). Incoming Macro Investment Associate at a hedge fund in Abu Dhabi.\n\n\nBayesian Volatility Modeling — Comparing GARCH(1,1) and Stochastic Volatility models for predicting S&P 500 weekly volatility using Bayesian inference with Stan. This project demonstrates how prior beliefs and posterior sampling lead to more robust parameter estimates than classical maximum likelihood.\nView Project →\n\n\n\nExplore the results interactively: toggle between models, switch between training and test datasets, and compare predictive performance in real time.\n\nReplace the iframe URL above with your Posit Connect Cloud deployment link."
-  },
-  {
-    "objectID": "index.html#featured-project",
-    "href": "index.html#featured-project",
-    "title": "Home",
-    "section": "",
-    "text": "Bayesian Volatility Modeling — Comparing GARCH(1,1) and Stochastic Volatility models for predicting S&P 500 weekly volatility using Bayesian inference with Stan. This project demonstrates how prior beliefs and posterior sampling lead to more robust parameter estimates than classical maximum likelihood.\nView Project →"
-  },
-  {
-    "objectID": "index.html#interactive-demo",
-    "href": "index.html#interactive-demo",
-    "title": "Home",
-    "section": "",
-    "text": "Explore the results interactively: toggle between models, switch between training and test datasets, and compare predictive performance in real time.\n\nReplace the iframe URL above with your Posit Connect Cloud deployment link."
-  },
-  {
     "objectID": "projects/project1.html",
     "href": "projects/project1.html",
     "title": "Bayesian Volatility Modeling",
@@ -187,5 +117,117 @@
     "title": "Bayesian Volatility Modeling",
     "section": "",
     "text": "Python 3.9+ — core language\nShiny for Python — interactive web framework\nPlotly — interactive visualizations\npandas / NumPy — data manipulation\nStan (PyStan) — Bayesian MCMC sampling (used for training, not in the app)\nArviZ — Bayesian diagnostics (used for analysis, not in the app)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A selection of data science projects showcasing statistical modeling, Bayesian inference, optimization, and interactive visualization.\n\n\nAn interactive application comparing two Bayesian volatility models on S&P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.\nHighlights:\n\nBayesian parameter estimation using Markov Chain Monte Carlo (Stan)\nGARCH(1,1) vs Stochastic Volatility model comparison\nOut-of-sample prediction including the COVID-19 volatility spike\nObject-oriented Python design with abstract classes, inheritance, and polymorphism\n\nView Project Details →\n\n\n\n\nComparing five portfolio optimization strategies — Efficient Frontier, Max Sharpe, Global Minimum Variance, Risk Parity, and Equal Weights — on a diversified 16-asset portfolio backtested over 2021–2024.\nHighlights:\n\nMean-Variance Optimization with efficient frontier construction\nMaximum Sharpe Ratio, GMV, and Risk Parity strategies\nBacktesting against S&P 500 and equal-weight benchmarks\nInteractive strategy comparison with Sharpe ratios and asset allocation views\n\nView Project Details →"
+  },
+  {
+    "objectID": "index.html#bayesian-volatility-modeling-garch-vs-stochastic-volatility",
+    "href": "index.html#bayesian-volatility-modeling-garch-vs-stochastic-volatility",
+    "title": "Projects",
+    "section": "",
+    "text": "An interactive application comparing two Bayesian volatility models on S&P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.\nHighlights:\n\nBayesian parameter estimation using Markov Chain Monte Carlo (Stan)\nGARCH(1,1) vs Stochastic Volatility model comparison\nOut-of-sample prediction including the COVID-19 volatility spike\nObject-oriented Python design with abstract classes, inheritance, and polymorphism\n\nView Project Details →"
+  },
+  {
+    "objectID": "index.html#portfolio-optimization-quantitative-approaches",
+    "href": "index.html#portfolio-optimization-quantitative-approaches",
+    "title": "Projects",
+    "section": "",
+    "text": "Comparing five portfolio optimization strategies — Efficient Frontier, Max Sharpe, Global Minimum Variance, Risk Parity, and Equal Weights — on a diversified 16-asset portfolio backtested over 2021–2024.\nHighlights:\n\nMean-Variance Optimization with efficient frontier construction\nMaximum Sharpe Ratio, GMV, and Risk Parity strategies\nBacktesting against S&P 500 and equal-weight benchmarks\nInteractive strategy comparison with Sharpe ratios and asset allocation views\n\nView Project Details →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a Data Science and Economics student at Central European University, graduating in June 2026. I spent my third year at the London School of Economics studying Stochastic and Actuarial Methods in Finance, Macroeconomics, and Valuation & Hedging — earning a Distinction.\nMy interests sit at the intersection of quantitative finance, macroeconomics, and data science. I’ve worked at Goldman Sachs (Equities Market Risk) and Raiffeisen Bank International, and I’m joining a macro-focused hedge fund in Abu Dhabi as an Investment Associate after graduation.\n\n\n\nProgramming: Python, SQL, Stata\nStatistics & ML: Bayesian inference, time series analysis, volatility modeling, econometrics, machine learning\nTools: Bloomberg, Refinitiv, Excel, PowerBI, Git, Databricks, Google Analytics\nFrameworks: Shiny, Quarto, Jupyter, Stan\n\n\n\n\nBSc Data Science and Economics (Distinction) Central European University, Vienna — September 2022 – June 2026\n\nAwards: CEU Tuition Awards (merit-based), CEU Alumni Scholarship (one of two bachelor’s recipients)\nThesis: Analyzing Duration and Convexity of EM vs G10 Bonds under Stress\n\nStudy Abroad — Department of Mathematics (Distinction) London School of Economics and Political Science — September 2024 – June 2025\n\n\n\nEnglish (full professional proficiency), Kyrgyz (native), Russian (bilingual)\n\n\n\n\nEmail: chorobek2004@gmail.com\nGitHub: github.com/CaptaiNemo4\nLinkedIn: linkedin.com/in/chorobeksheranov"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "",
+    "text": "Programming: Python, SQL, Stata\nStatistics & ML: Bayesian inference, time series analysis, volatility modeling, econometrics, machine learning\nTools: Bloomberg, Refinitiv, Excel, PowerBI, Git, Databricks, Google Analytics\nFrameworks: Shiny, Quarto, Jupyter, Stan"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "",
+    "text": "BSc Data Science and Economics (Distinction) Central European University, Vienna — September 2022 – June 2026\n\nAwards: CEU Tuition Awards (merit-based), CEU Alumni Scholarship (one of two bachelor’s recipients)\nThesis: Analyzing Duration and Convexity of EM vs G10 Bonds under Stress\n\nStudy Abroad — Department of Mathematics (Distinction) London School of Economics and Political Science — September 2024 – June 2025"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About",
+    "section": "",
+    "text": "English (full professional proficiency), Kyrgyz (native), Russian (bilingual)"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "",
+    "text": "Email: chorobek2004@gmail.com\nGitHub: github.com/CaptaiNemo4\nLinkedIn: linkedin.com/in/chorobeksheranov"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A selection of data science projects showcasing statistical modeling, Bayesian inference, and interactive visualization.\n\n\nAn interactive application comparing two Bayesian volatility models on S&P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.\nHighlights:\n\nBayesian parameter estimation using Markov Chain Monte Carlo (Stan)\nGARCH(1,1) vs Stochastic Volatility model comparison\nOut-of-sample prediction including the COVID-19 volatility spike\nObject-oriented Python design with abstract classes, inheritance, and polymorphism\n\nView Project Details →"
+  },
+  {
+    "objectID": "projects/index.html#bayesian-volatility-modeling-garch-vs-stochastic-volatility",
+    "href": "projects/index.html#bayesian-volatility-modeling-garch-vs-stochastic-volatility",
+    "title": "Projects",
+    "section": "",
+    "text": "An interactive application comparing two Bayesian volatility models on S&P 500 weekly data (2013–2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.\nHighlights:\n\nBayesian parameter estimation using Markov Chain Monte Carlo (Stan)\nGARCH(1,1) vs Stochastic Volatility model comparison\nOut-of-sample prediction including the COVID-19 volatility spike\nObject-oriented Python design with abstract classes, inheritance, and polymorphism\n\nView Project Details →"
+  },
+  {
+    "objectID": "projects/project2.html",
+    "href": "projects/project2.html",
+    "title": "Portfolio Optimization",
+    "section": "",
+    "text": "This project compares five portfolio optimization strategies on a diversified 16-asset portfolio spanning U.S. equities, international equities, real estate, commodities, and fixed income. Models were trained on 2014–2021 data and backtested on 2021–2024.\n\n\nMean-Variance Optimization (Efficient Frontier) — Minimizes portfolio volatility for a given target return. Three points along the frontier were selected: conservative, moderate, and aggressive.\n\\[\\min_{\\mathbf{w}} \\left(\\mathbf{w}^T \\Sigma \\mathbf{w}\\right) \\quad \\text{s.t.} \\quad \\mathbf{w}^T \\mu = \\mu_p\\]\nMaximum Sharpe Ratio — Maximizes risk-adjusted return by optimizing the ratio of excess return to volatility.\n\\[\\max_{\\mathbf{w}} \\left(\\frac{\\mathbf{w}^T \\mu - R_f}{\\sqrt{\\mathbf{w}^T \\Sigma \\mathbf{w}}}\\right)\\]\nGlobal Minimum Variance — Minimizes total portfolio risk without requiring expected return estimates.\nRisk Parity — Equalizes the risk contribution of each asset to the overall portfolio.\nEqual Weights (Benchmark) — Naive 1/N allocation across all assets.\n\n\n\n16 assets across 5 classes: U.S. Equities (SPY, AAPL, MSFT, JNJ, JPM, BA, NKE, AMZN), Non-U.S. Equities (IEMG, ILF, DB1.DE), Real Estate (IYR, REM), Commodities (GLD, CL=F), and Fixed Income (ISTB).\n\n\n\nExplore the backtest results below — toggle strategies, compare cumulative returns, Sharpe ratios, and asset allocations.\n\n\n\n\n\nThe aggressive efficient frontier point (EF_3) achieved the highest total return at 38.0%, beating the S&P 500 benchmark (32.9%)\nMax Sharpe and EF_2 performed comparably to SPY with Sharpe ratios of 0.36 and 0.35\nGMV underperformed significantly (-1.1% total return) — minimizing risk alone was insufficient during a rising market\nRisk Parity delivered modest returns (9.1%) with low volatility, suitable for conservative investors\nThe Equal Weights benchmark outperformed most optimization strategies, highlighting the challenge of beating simple approaches\n\n\n\n\n\nPython 3.9+, SciPy (Sequential Quadratic Programming), pandas, NumPy, Plotly\nOptimization: scipy.optimize.minimize with SLSQP method\nData: Yahoo Finance (yfinance), U.S. Treasury rates (FRED)"
+  },
+  {
+    "objectID": "projects/project2.html#the-strategies",
+    "href": "projects/project2.html#the-strategies",
+    "title": "Portfolio Optimization",
+    "section": "",
+    "text": "Mean-Variance Optimization (Efficient Frontier) — Minimizes portfolio volatility for a given target return. Three points along the frontier were selected: conservative, moderate, and aggressive.\n\\[\\min_{\\mathbf{w}} \\left(\\mathbf{w}^T \\Sigma \\mathbf{w}\\right) \\quad \\text{s.t.} \\quad \\mathbf{w}^T \\mu = \\mu_p\\]\nMaximum Sharpe Ratio — Maximizes risk-adjusted return by optimizing the ratio of excess return to volatility.\n\\[\\max_{\\mathbf{w}} \\left(\\frac{\\mathbf{w}^T \\mu - R_f}{\\sqrt{\\mathbf{w}^T \\Sigma \\mathbf{w}}}\\right)\\]\nGlobal Minimum Variance — Minimizes total portfolio risk without requiring expected return estimates.\nRisk Parity — Equalizes the risk contribution of each asset to the overall portfolio.\nEqual Weights (Benchmark) — Naive 1/N allocation across all assets."
+  },
+  {
+    "objectID": "projects/project2.html#portfolio-assets",
+    "href": "projects/project2.html#portfolio-assets",
+    "title": "Portfolio Optimization",
+    "section": "",
+    "text": "16 assets across 5 classes: U.S. Equities (SPY, AAPL, MSFT, JNJ, JPM, BA, NKE, AMZN), Non-U.S. Equities (IEMG, ILF, DB1.DE), Real Estate (IYR, REM), Commodities (GLD, CL=F), and Fixed Income (ISTB)."
+  },
+  {
+    "objectID": "projects/project2.html#interactive-demo",
+    "href": "projects/project2.html#interactive-demo",
+    "title": "Portfolio Optimization",
+    "section": "",
+    "text": "Explore the backtest results below — toggle strategies, compare cumulative returns, Sharpe ratios, and asset allocations."
+  },
+  {
+    "objectID": "projects/project2.html#key-findings",
+    "href": "projects/project2.html#key-findings",
+    "title": "Portfolio Optimization",
+    "section": "",
+    "text": "The aggressive efficient frontier point (EF_3) achieved the highest total return at 38.0%, beating the S&P 500 benchmark (32.9%)\nMax Sharpe and EF_2 performed comparably to SPY with Sharpe ratios of 0.36 and 0.35\nGMV underperformed significantly (-1.1% total return) — minimizing risk alone was insufficient during a rising market\nRisk Parity delivered modest returns (9.1%) with low volatility, suitable for conservative investors\nThe Equal Weights benchmark outperformed most optimization strategies, highlighting the challenge of beating simple approaches"
+  },
+  {
+    "objectID": "projects/project2.html#technology-stack",
+    "href": "projects/project2.html#technology-stack",
+    "title": "Portfolio Optimization",
+    "section": "",
+    "text": "Python 3.9+, SciPy (Sequential Quadratic Programming), pandas, NumPy, Plotly\nOptimization: scipy.optimize.minimize with SLSQP method\nData: Yahoo Finance (yfinance), U.S. Treasury rates (FRED)"
   }
 ]

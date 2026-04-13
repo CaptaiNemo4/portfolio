@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -106,35 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -212,9 +148,9 @@ window.Quarto = {
 <section id="the-models" class="level2">
 <h2 class="anchored" data-anchor-id="the-models">The Models</h2>
 <p><strong>GARCH(1,1)</strong> models conditional variance as a deterministic function of past squared shocks and past variance:</p>
-<p><span class="math display">\[\sigma_t^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2\]</span></p>
+<p>$$_t^2 = _0 + <em>1 a</em>{t-1}^2 + <em>1 </em>{t-1}^2$$</p>
 <p><strong>Stochastic Volatility (SV)</strong> treats log-volatility as a latent AR(1) process, allowing for smoother, continuous changes:</p>
-<p><span class="math display">\[y_t = \epsilon_t \exp\left(\frac{h_t}{2}\right), \quad h_{t+1} = \mu + \phi(h_t - \mu) + \delta_t \sigma\]</span></p>
+<p>$$y_t = <em>t (), h</em>{t+1} = + (h_t - ) + _t $$</p>
 </section>
 <section id="why-bayesian" class="level2">
 <h2 class="anchored" data-anchor-id="why-bayesian">Why Bayesian?</h2>
@@ -222,46 +158,23 @@ window.Quarto = {
 </section>
 <section id="interactive-demo" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-demo">Interactive Demo</h2>
-<p>Explore the model results below — switch between training and test data, toggle models on and off, and compare their predictive accuracy.</p>
-<iframe src="YOUR_POSIT_CLOUD_URL_HERE" width="100%" height="800" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
-<p><em>Replace the iframe URL above with your Posit Connect Cloud deployment link.</em></p>
+<iframe src="https://connect.posit.cloud/captainemo4/content/019d849e-bffa-263e-d186-9b2cac9a2100" width="100%" height="800" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
 </section>
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
 <ul>
 <li>The <strong>SV model achieved lower MSE</strong> on both training and test data overall</li>
-<li><strong>GARCH(1,1) better captured the COVID-19 volatility spike</strong> — its deterministic structure reacts quickly to large shocks</li>
-<li><strong>SV performed better during stable periods</strong> — its latent process provides smoother, more accurate estimates when volatility is low</li>
-<li>Both models benefit from Bayesian estimation, producing robust parameter estimates even with relatively short training periods</li>
+<li><strong>GARCH(1,1) better captured the COVID-19 volatility spike</strong></li>
+<li><strong>SV performed better during stable periods</strong></li>
+<li>Both models benefit from Bayesian estimation</li>
 </ul>
-</section>
-<section id="oop-design" class="level2">
-<h2 class="anchored" data-anchor-id="oop-design">OOP Design</h2>
-<p>The Shiny application is built with object-oriented principles:</p>
-<ul>
-<li><strong>Abstract Base Classes:</strong> <code>DataLoader</code> and <code>VolatilityModel</code> define interfaces</li>
-<li><strong>Inheritance:</strong> <code>CSVDataLoader</code>, <code>GARCHModel</code>, <code>SVModel</code> implement specific behavior</li>
-<li><strong>Polymorphism:</strong> The <code>Visualizer</code> works with any <code>VolatilityModel</code> without knowing its type</li>
-<li><strong>Encapsulation:</strong> <code>DataManager</code> hides data loading behind property accessors</li>
-<li><strong>Composition:</strong> <code>AppController</code> wires all components together (Facade pattern)</li>
-</ul>
-</section>
-<section id="running-locally" class="level2">
-<h2 class="anchored" data-anchor-id="running-locally">Running Locally</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> projects/data</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">shiny</span> run app.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Then visit <code>http://127.0.0.1:8000</code> in your browser.</p>
 </section>
 <section id="technology-stack" class="level2">
 <h2 class="anchored" data-anchor-id="technology-stack">Technology Stack</h2>
 <ul>
-<li><strong>Python 3.9+</strong> — core language</li>
-<li><strong>Shiny for Python</strong> — interactive web framework</li>
-<li><strong>Plotly</strong> — interactive visualizations</li>
-<li><strong>pandas / NumPy</strong> — data manipulation</li>
-<li><strong>Stan (PyStan)</strong> — Bayesian MCMC sampling (used for training, not in the app)</li>
-<li><strong>ArviZ</strong> — Bayesian diagnostics (used for analysis, not in the app)</li>
+<li><strong>Python 3.9+</strong>, Shiny for Python, Plotly, pandas, NumPy</li>
+<li><strong>Stan (PyStan)</strong> for Bayesian MCMC sampling</li>
+<li><strong>ArviZ</strong> for Bayesian diagnostics</li>
 </ul>
 
 

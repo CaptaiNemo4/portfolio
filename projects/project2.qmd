@@ -1,0 +1,46 @@
+---
+title: "Portfolio Optimization"
+format: html
+---
+
+# Portfolio Optimization: Quantitative Approaches
+
+This project compares five portfolio optimization strategies on a diversified 16-asset portfolio spanning U.S. equities, international equities, real estate, commodities, and fixed income. Models were trained on 2014 to 2021 data and backtested on 2021 to 2024.
+
+## The Strategies
+
+**Mean-Variance Optimization (Efficient Frontier)** minimizes portfolio volatility for a given target return:
+
+$$\min_{\mathbf{w}} \left(\mathbf{w}^T \Sigma \mathbf{w}\right) \quad \text{s.t.} \quad \mathbf{w}^T \mu = \mu_p$$
+
+**Maximum Sharpe Ratio** maximizes risk-adjusted return:
+
+$$\max_{\mathbf{w}} \frac{\mathbf{w}^T \mu - R_f}{\sqrt{\mathbf{w}^T \Sigma \mathbf{w}}}$$
+
+**Global Minimum Variance** minimizes total portfolio risk without requiring expected return estimates.
+
+**Risk Parity** equalizes the risk contribution of each asset to the overall portfolio.
+
+**Equal Weights (Benchmark)** assigns equal weight (1/N) to all assets.
+
+## Portfolio Assets
+
+16 assets across 5 classes: U.S. Equities (SPY, AAPL, MSFT, JNJ, JPM, BA, NKE, AMZN), Non-U.S. Equities (IEMG, ILF, DB1.DE), Real Estate (IYR, REM), Commodities (GLD, CL=F), and Fixed Income (ISTB).
+
+## Interactive Demo
+
+```{=html}
+<iframe src="https://019d849e-bffa-263e-d186-9b2cac9a2100.share.connect.posit.cloud/?tab=port" width="100%" height="1200" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
+```
+
+## Key Findings
+
+- EF_3 (aggressive) achieved 38.0% total return, beating SPY (32.9%)
+- Max Sharpe and EF_2 performed comparably to SPY
+- GMV underperformed at -1.1%, minimizing risk alone was insufficient
+- Equal Weights outperformed most optimization strategies
+
+## Technology Stack
+
+- Python 3.9+, SciPy (SQP optimization), pandas, NumPy, Plotly
+- Data: Yahoo Finance (yfinance), U.S. Treasury rates (FRED)

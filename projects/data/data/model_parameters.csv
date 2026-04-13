@@ -1,0 +1,8 @@
+model,parameter,estimate,description
+"GARCH(1,1)",mu,0.003,Mean return
+"GARCH(1,1)",alpha0,3e-05,Constant variance term
+"GARCH(1,1)",alpha1,0.154,ARCH effect (reaction to shocks)
+"GARCH(1,1)",beta1,0.778,GARCH effect (volatility persistence)
+SV,mu,-8.809,Mean log volatility
+SV,phi,0.932,Persistence of volatility
+SV,sigma,0.277,White noise shock scale

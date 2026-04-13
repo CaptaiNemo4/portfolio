@@ -1,0 +1,28 @@
+---
+title: "Projects"
+format: html
+---
+
+# Projects
+
+A selection of data science projects showcasing statistical modeling, Bayesian inference, optimization, and interactive visualization.
+
+## 1. Bayesian Volatility Modeling: GARCH vs Stochastic Volatility
+
+Comparing two Bayesian volatility models on S&P 500 weekly data (2013 to 2023). Built with Shiny for Python, featuring real-time model comparison and Plotly visualizations.
+
+- Bayesian parameter estimation using MCMC (Stan)
+- GARCH(1,1) vs Stochastic Volatility model comparison
+- Out-of-sample prediction including the COVID-19 volatility spike
+
+[View Project Details](project1.qmd)
+
+## 2. Portfolio Optimization: Quantitative Approaches
+
+Comparing five portfolio optimization strategies on a diversified 16-asset portfolio backtested over 2021 to 2024.
+
+- Mean-Variance Optimization with efficient frontier construction
+- Maximum Sharpe Ratio, GMV, and Risk Parity strategies
+- Backtesting against S&P 500 and equal-weight benchmarks
+
+[View Project Details](project2.qmd)

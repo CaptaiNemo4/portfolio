@@ -1,0 +1,41 @@
+---
+title: "Bayesian Volatility Modeling"
+format: html
+---
+
+# Bayesian Volatility Modeling: GARCH vs Stochastic Volatility
+
+This project applies Bayesian inference to estimate and compare two volatility models on S&P 500 (IVV ETF) weekly data. The models were trained on 2013 to 2017 data and evaluated on 2018 to present, capturing events like the COVID-19 market crash.
+
+## The Models
+
+**GARCH(1,1)** models conditional variance as a deterministic function of past squared shocks and past variance:
+
+$$\sigma_t^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2$$
+
+**Stochastic Volatility (SV)** treats log-volatility as a latent AR(1) process:
+
+$$y_t = \epsilon_t \exp\left(\frac{h_t}{2}\right), \quad h_{t+1} = \mu + \phi(h_t - \mu) + \delta_t \sigma$$
+
+## Why Bayesian?
+
+Instead of finding a single "best" parameter set via maximum likelihood, Bayesian inference computes the full posterior distribution of parameters using MCMC sampling (Stan). This gives more robust estimates and naturally quantifies uncertainty.
+
+## Interactive Demo
+
+```{=html}
+<iframe src="https://019d849e-bffa-263e-d186-9b2cac9a2100.share.connect.posit.cloud/?tab=vol" width="100%" height="1200" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
+```
+
+## Key Findings
+
+- The SV model achieved lower MSE on both training and test data overall
+- GARCH(1,1) better captured the COVID-19 volatility spike
+- SV performed better during stable periods
+- Both models benefit from Bayesian estimation
+
+## Technology Stack
+
+- Python 3.9+, Shiny for Python, Plotly, pandas, NumPy
+- Stan (PyStan) for Bayesian MCMC sampling
+- ArviZ for Bayesian diagnostics

@@ -1,0 +1,28 @@
+---
+title: "Home"
+format: html
+---
+
+# Hi, I'm Chorobek Sheranov
+
+Welcome to my Data Science portfolio. I'm a final-year BSc Data Science and Economics student at Central European University, with a study abroad year at the London School of Economics. My interests lie in quantitative finance, macro investing, and Bayesian statistics.
+
+Previously Summer Analyst at Goldman Sachs (London) and Working Student at Raiffeisen Bank International (Vienna). Incoming Macro Investment Associate at a newly establishing hedge fund in Abu Dhabi.
+
+## Featured Projects
+
+**1. Bayesian Volatility Modeling** : Comparing GARCH(1,1) and Stochastic Volatility models for predicting S&P 500 weekly volatility using Bayesian inference with Stan.
+
+[View Project](projects/project1.qmd)
+
+**2. Portfolio Optimization** : Comparing five quantitative portfolio construction strategies on a diversified 16-asset portfolio, backtested over 2021 to 2024.
+
+[View Project](projects/project2.qmd)
+
+## Interactive Demo
+
+Explore both projects interactively below.
+
+```{=html}
+<iframe src="https://019d849e-bffa-263e-d186-9b2cac9a2100.share.connect.posit.cloud/" width="100%" height="1200" style="border: 1px solid #ddd; border-radius: 4px;"></iframe>
+```

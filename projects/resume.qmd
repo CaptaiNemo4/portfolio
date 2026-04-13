@@ -1,0 +1,68 @@
+---
+title: "Resume and Contact"
+format: html
+---
+
+# Chorobek Sheranov
+
+**Quantitative Finance | Data Science | Macro Investing**
+
+- Phone: +43 678 7817390
+- Email: chorobek2004@gmail.com
+- LinkedIn: [linkedin.com/in/chorobeksheranov](https://linkedin.com/in/chorobeksheranov)
+- GitHub: [github.com/CaptaiNemo4](https://github.com/CaptaiNemo4)
+
+## Summary
+
+Data Science and Economics student at CEU with study abroad at LSE. Experience in equities market risk at Goldman Sachs and data-driven product strategy at Raiffeisen Bank International. Incoming Macro Investment Associate at a hedge fund in Abu Dhabi.
+
+## Education
+
+**BSc Data Science and Economics** (Grade: Distinction)
+Central European University, Vienna (September 2022 to June 2026)
+
+- Coursework: Advanced Machine Learning, Econometrics 2, Databases, Bayesian Statistics, Algorithms and Data Structures
+- Awards: CEU Tuition Awards (merit-based), CEU Alumni Scholarship (one of two bachelor's recipients)
+- Thesis: Analyzing Duration and Convexity of EM vs G10 Bonds under Stress
+
+**Study Abroad, Department of Mathematics** (Course Grade: Distinction)
+London School of Economics and Political Science (September 2024 to June 2025)
+
+- Coursework: Stochastic and Actuarial Methods in Finance, Macroeconomics, Valuation, Hedging and Optimization
+
+## Work Experience
+
+**Goldman Sachs**, Summer Analyst, Equities Market Risk
+London, UK (June 2025 to August 2025)
+
+- Investigated VaR spikes across derivatives books through model diagnostics, volatility trends and gamma exposure analysis
+- Automated the One Delta block trade risk-assessment workflow with proprietary programming language; solution shared with regional offices and presented to the GSI Chief Market Risk Officer
+- Shadowed traders across EM FX, Systematic Trading and Equity Derivatives desks
+
+**Raiffeisen Bank International AG**, Working Student, Investments and Savings Monetization
+Vienna, Austria (April 2024 to September 2024)
+
+- Produced data-driven sales strategies for investment and savings products across 14 countries, targeting 13.3M+ customers
+- Developed an automated PowerBI reporting system using SQL, later adopted division-wide
+
+**Incoming:** Macro Investment Associate at a hedge fund in Abu Dhabi (Starting 2026)
+
+## Leadership
+
+- **CEU Data Science Society**: Founder and President (2024 to present). Reached 90+ members within a week of launch
+- **WUTIS Trading and Investment Society**: Algorithmic Trading Associate (2023 to present)
+- **LSE SU Alternative Investments Conference**: Technology Officer (2024 to 2025)
+
+## Achievements
+
+- Future Leaders Exchange Program (FLEX): Class of '22. Selected with less than 1% acceptance rate. GPA: 4.0/4.0, ranked #1
+- National Mathematics Olympiad: State Team Captain (Kyrgyzstan, 2019)
+
+## Technical Skills
+
+- **Languages:** Python, SQL, Stata
+- **Tools:** Bloomberg, Refinitiv, Excel, PowerBI, PowerPoint, Git, Databricks, Google Analytics
+
+## Languages
+
+English (full professional proficiency), Kyrgyz (native), Russian (bilingual)

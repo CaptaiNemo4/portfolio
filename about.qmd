@@ -1,0 +1,37 @@
+---
+title: "About"
+format: html
+---
+
+# About Me
+
+I'm a Data Science and Economics student at Central European University, graduating in June 2026. I spent my third year at the London School of Economics studying Macroeconomics and Financial Mathematics.
+
+My interests sit at the intersection of quantitative finance, macroeconomics, and data science. I've worked at Goldman Sachs (Equities Market Risk) and Raiffeisen Bank International, and I'm joining a macro-focused hedge fund in Abu Dhabi as an Investment Associate after graduation.
+
+## Skills
+
+- **Programming:** Python, SQL, Stata
+- **Statistics and ML:** Time series analysis, volatility modeling, econometrics, machine learning
+- **Tools:** Bloomberg, Refinitiv, Excel, PowerBI, Git, Databricks, Google Analytics
+
+## Education
+
+**BSc Data Science and Economics** 
+Central European University, Vienna (September 2022 to June 2026)
+
+- Awards: CEU Tuition Awards (merit-based), CEU Alumni Scholarship (one of two bachelor's recipients)
+- Thesis: Analyzing Duration and Convexity of EM vs G10 Bonds under Stress
+
+**Study Abroad, Department of Mathematics** 
+London School of Economics and Political Science (September 2024 to June 2025)
+
+## Languages
+
+English (full professional proficiency), Kyrgyz (native), Russian (bilingual)
+
+## Contact
+
+- **Email:** chorobek2004@gmail.com
+- **GitHub:** [github.com/CaptaiNemo4](https://github.com/CaptaiNemo4)
+- **LinkedIn:** [linkedin.com/in/chorobeksheranov](https://linkedin.com/in/chorobeksheranov)

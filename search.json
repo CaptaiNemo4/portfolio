@@ -116,7 +116,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome to my Data Science portfolio. I’m a final-year BSc Data Science and Economics student at Central European University, with a study abroad year at the London School of Economics. My interests lie in quantitative finance, macro investing, and Bayesian statistics.\nPreviously at Goldman Sachs (Equities Market Risk) and Raiffeisen Bank International. Incoming Macro Investment Associate at a hedge fund in Abu Dhabi.\n\n\nBayesian Volatility Modeling — Comparing GARCH(1,1) and Stochastic Volatility models for predicting S&P 500 weekly volatility using Bayesian inference with Stan. This project demonstrates how prior beliefs and posterior sampling lead to more robust parameter estimates than classical maximum likelihood.\nView Project →\n\n\n\nExplore the results interactively — toggle between models, switch between training and test datasets, and compare predictive performance in real time.\n\nReplace the iframe URL above with your Posit Connect Cloud deployment link."
+    "text": "Welcome to my Data Science portfolio. I’m a final-year BSc Data Science and Economics student at Central European University, with a study abroad year at the London School of Economics within the Department of Mathematics. My interests lie in macro investing, emerging markets and financial mathematics.\nPreviously, Summer Analyst at Goldman Sachs (London) and Working Student at Raiffeisen Bank International (Vienna). Incoming Macro Investment Associate at a hedge fund in Abu Dhabi.\n\n\nBayesian Volatility Modeling — Comparing GARCH(1,1) and Stochastic Volatility models for predicting S&P 500 weekly volatility using Bayesian inference with Stan. This project demonstrates how prior beliefs and posterior sampling lead to more robust parameter estimates than classical maximum likelihood.\nView Project →\n\n\n\nExplore the results interactively: toggle between models, switch between training and test datasets, and compare predictive performance in real time.\n\nReplace the iframe URL above with your Posit Connect Cloud deployment link."
   },
   {
     "objectID": "index.html#featured-project",
@@ -130,7 +130,7 @@
     "href": "index.html#interactive-demo",
     "title": "Home",
     "section": "",
-    "text": "Explore the results interactively — toggle between models, switch between training and test datasets, and compare predictive performance in real time.\n\nReplace the iframe URL above with your Posit Connect Cloud deployment link."
+    "text": "Explore the results interactively: toggle between models, switch between training and test datasets, and compare predictive performance in real time.\n\nReplace the iframe URL above with your Posit Connect Cloud deployment link."
   },
   {
     "objectID": "projects/project1.html",

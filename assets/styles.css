@@ -1,0 +1,29 @@
+:root{
+  --primary:#0b6cff;
+  --accent:#ff7a59;
+  --bg:#ffffff;
+  --muted:#6b7280;
+}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111827;
+  background: var(--bg);
+}
+header.site-title{
+  color: var(--primary);
+}
+a{
+  color: var(--primary);
+}
+.card{
+  border-radius:8px;
+  box-shadow: 0 1px 6px rgba(16,24,40,0.06);
+  padding: 1rem;
+}
+button{
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+}

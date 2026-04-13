@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -144,13 +173,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="bayesian-volatility-modeling-garch-vs-stochastic-volatility" class="level1">
 <h1>Bayesian Volatility Modeling: GARCH vs Stochastic Volatility</h1>
-<p>This project applies Bayesian inference to estimate and compare two volatility models on S&amp;P 500 (IVV ETF) weekly data. The models were trained on 2013–2017 data and evaluated on 2018–present, capturing events like the COVID-19 market crash.</p>
+<p>This project applies Bayesian inference to estimate and compare two volatility models on S&amp;P 500 (IVV ETF) weekly data. The models were trained on 2013 to 2017 data and evaluated on 2018 to present, capturing events like the COVID-19 market crash.</p>
 <section id="the-models" class="level2">
 <h2 class="anchored" data-anchor-id="the-models">The Models</h2>
 <p><strong>GARCH(1,1)</strong> models conditional variance as a deterministic function of past squared shocks and past variance:</p>
-<p>$$_t^2 = _0 + <em>1 a</em>{t-1}^2 + <em>1 </em>{t-1}^2$$</p>
-<p><strong>Stochastic Volatility (SV)</strong> treats log-volatility as a latent AR(1) process, allowing for smoother, continuous changes:</p>
-<p>$$y_t = <em>t (), h</em>{t+1} = + (h_t - ) + _t $$</p>
+<p><span class="math display">\[\sigma_t^2 = \alpha_0 + \alpha_1 a_{t-1}^2 + \beta_1 \sigma_{t-1}^2\]</span></p>
+<p><strong>Stochastic Volatility (SV)</strong> treats log-volatility as a latent AR(1) process:</p>
+<p><span class="math display">\[y_t = \epsilon_t \exp\left(\frac{h_t}{2}\right), \quad h_{t+1} = \mu + \phi(h_t - \mu) + \delta_t \sigma\]</span></p>
 </section>
 <section id="why-bayesian" class="level2">
 <h2 class="anchored" data-anchor-id="why-bayesian">Why Bayesian?</h2>
@@ -163,18 +192,18 @@ ul.task-list li input[type="checkbox"] {
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
 <ul>
-<li>The <strong>SV model achieved lower MSE</strong> on both training and test data overall</li>
-<li><strong>GARCH(1,1) better captured the COVID-19 volatility spike</strong></li>
-<li><strong>SV performed better during stable periods</strong></li>
+<li>The SV model achieved lower MSE on both training and test data overall</li>
+<li>GARCH(1,1) better captured the COVID-19 volatility spike</li>
+<li>SV performed better during stable periods</li>
 <li>Both models benefit from Bayesian estimation</li>
 </ul>
 </section>
 <section id="technology-stack" class="level2">
 <h2 class="anchored" data-anchor-id="technology-stack">Technology Stack</h2>
 <ul>
-<li><strong>Python 3.9+</strong>, Shiny for Python, Plotly, pandas, NumPy</li>
-<li><strong>Stan (PyStan)</strong> for Bayesian MCMC sampling</li>
-<li><strong>ArviZ</strong> for Bayesian diagnostics</li>
+<li>Python 3.9+, Shiny for Python, Plotly, pandas, NumPy</li>
+<li>Stan (PyStan) for Bayesian MCMC sampling</li>
+<li>ArviZ for Bayesian diagnostics</li>
 </ul>
 
 

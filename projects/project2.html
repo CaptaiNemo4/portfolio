@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -144,14 +173,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="portfolio-optimization-quantitative-approaches" class="level1">
 <h1>Portfolio Optimization: Quantitative Approaches</h1>
-<p>This project compares five portfolio optimization strategies on a diversified 16-asset portfolio spanning U.S. equities, international equities, real estate, commodities, and fixed income. Models were trained on 2014–2021 data and backtested on 2021–2024.</p>
+<p>This project compares five portfolio optimization strategies on a diversified 16-asset portfolio spanning U.S. equities, international equities, real estate, commodities, and fixed income. Models were trained on 2014 to 2021 data and backtested on 2021 to 2024.</p>
 <section id="the-strategies" class="level2">
 <h2 class="anchored" data-anchor-id="the-strategies">The Strategies</h2>
-<p><strong>Mean-Variance Optimization (Efficient Frontier)</strong> — Minimizes portfolio volatility for a given target return. Three points along the frontier were selected: conservative, moderate, and aggressive.</p>
-<p><strong>Maximum Sharpe Ratio</strong> — Maximizes risk-adjusted return by optimizing the ratio of excess return to volatility.</p>
-<p><strong>Global Minimum Variance</strong> — Minimizes total portfolio risk without requiring expected return estimates.</p>
-<p><strong>Risk Parity</strong> — Equalizes the risk contribution of each asset to the overall portfolio.</p>
-<p><strong>Equal Weights (Benchmark)</strong> — Naive 1/N allocation across all assets.</p>
+<p><strong>Mean-Variance Optimization (Efficient Frontier)</strong> minimizes portfolio volatility for a given target return:</p>
+<p><span class="math display">\[\min_{\mathbf{w}} \left(\mathbf{w}^T \Sigma \mathbf{w}\right) \quad \text{s.t.} \quad \mathbf{w}^T \mu = \mu_p\]</span></p>
+<p><strong>Maximum Sharpe Ratio</strong> maximizes risk-adjusted return:</p>
+<p><span class="math display">\[\max_{\mathbf{w}} \frac{\mathbf{w}^T \mu - R_f}{\sqrt{\mathbf{w}^T \Sigma \mathbf{w}}}\]</span></p>
+<p><strong>Global Minimum Variance</strong> minimizes total portfolio risk without requiring expected return estimates.</p>
+<p><strong>Risk Parity</strong> equalizes the risk contribution of each asset to the overall portfolio.</p>
+<p><strong>Equal Weights (Benchmark)</strong> assigns equal weight (1/N) to all assets.</p>
 </section>
 <section id="portfolio-assets" class="level2">
 <h2 class="anchored" data-anchor-id="portfolio-assets">Portfolio Assets</h2>
@@ -164,17 +195,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="key-findings" class="level2">
 <h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
 <ul>
-<li><strong>EF_3 (aggressive) achieved 38.0% total return</strong>, beating SPY (32.9%)</li>
-<li><strong>Max Sharpe and EF_2 performed comparably</strong> to SPY</li>
-<li><strong>GMV underperformed</strong> (-1.1%) — minimizing risk alone was insufficient</li>
-<li><strong>Equal Weights outperformed</strong> most optimization strategies</li>
+<li>EF_3 (aggressive) achieved 38.0% total return, beating SPY (32.9%)</li>
+<li>Max Sharpe and EF_2 performed comparably to SPY</li>
+<li>GMV underperformed at -1.1%, minimizing risk alone was insufficient</li>
+<li>Equal Weights outperformed most optimization strategies</li>
 </ul>
 </section>
 <section id="technology-stack" class="level2">
 <h2 class="anchored" data-anchor-id="technology-stack">Technology Stack</h2>
 <ul>
-<li><strong>Python 3.9+</strong>, SciPy (SQP optimization), pandas, NumPy, Plotly</li>
-<li><strong>Data:</strong> Yahoo Finance, U.S. Treasury rates (FRED)</li>
+<li>Python 3.9+, SciPy (SQP optimization), pandas, NumPy, Plotly</li>
+<li>Data: Yahoo Finance (yfinance), U.S. Treasury rates (FRED)</li>
 </ul>
 
 
